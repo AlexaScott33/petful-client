@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Dashboard from './Dashboard';
+import store from './store';
 
 import './index.css';
+
+console.log(store.getState());
 
 const catToAdopt = [
     {
