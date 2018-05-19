@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Cat from './Cat';
 import Dog from './Dog';
-import { fetchCat } from '../actions/cat';
-import { fetchDog } from '../actions/dog';
+import { fetchCat, adoptCat } from '../actions/cat';
+import { fetchDog, adoptDog } from '../actions/dog';
 
 
 import './Dashboard.css';
@@ -22,8 +22,8 @@ export class Dashboard extends React.Component {
         // ));
         return (
             <div>
-                <Cat cat={this.props.cats} onAdoptPet={() => console.log('Cat Adopt button clicked!')}/>
-                <Dog dog={this.props.dogs} onAdoptPet={() => console.log('Dog Adopt button clicked!')}/>
+                <Cat cat={this.props.cats} onAdoptPet={() => this.props.dispatch(adoptCat())}/>
+                <Dog dog={this.props.dogs} onAdoptPet={() => this.props.dispatch(adoptDog())}/>
             </div>
         );
     }

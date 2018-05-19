@@ -64,13 +64,11 @@ export const adoptCat = () => dispatch => {
         if (!res.ok) {
             return Promise.reject(res.statusText);
         }
-        return res.json();
+        return dispatch(fetchCat());
     })
-    .then(cats => {
+    .then((cats) => {
+        console.log('dispatching adoptCatSuccess');
         dispatch(adoptCatSuccess(cats));
-    })
-    .then(() => {
-        dispatch(fetchCat());
     }).catch(err => {
         dispatch(adoptCatError(err));
     });
