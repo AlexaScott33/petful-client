@@ -19,6 +19,7 @@ export const fetchDogError = error => ({
 
 export const fetchDog = () => dispatch => {
     dispatch(fetchDogRequest());
+    console.log('making fetch request to get dog');
     fetch(`${API_BASE_URL}/api/dog`)
     .then(res => {
         if (!res.ok) {

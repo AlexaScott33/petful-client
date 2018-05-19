@@ -7,22 +7,22 @@ export default class Dog extends React.Component {
                 <div className="col-6">
                     <section className="pet-dog">
                         <header>
-                            <h2>{this.props.dog[0].name}</h2>
-                            <img src={this.props.dog[0].imageURL} alt={this.props.dog[0].imageDescription}></img>
+                            <h2>{this.props.dog.name}</h2>
+                            <img src={this.props.dog.imageURL} alt={this.props.dog.imageDescription}></img>
                         </header>
                     
 
                         <main>
-                            <h3>More about {this.props.dog[0].name}</h3>
+                            <h3>More about {this.props.dog.name}</h3>
                             <dl>
                                 <dt>Sex</dt>
-                                <dd>{this.props.dog[0].sex}</dd>
+                                <dd>{this.props.dog.sex}</dd>
                                 <dt>Age</dt>
-                                <dd>{this.props.dog[0].age}</dd>
+                                <dd>{this.props.dog.age}</dd>
                                 <dt>Breed</dt>
-                                <dd>{this.props.dog[0].breed}</dd>
+                                <dd>{this.props.dog.breed}</dd>
                                 <dt>Story</dt>
-                                <dd>{this.props.dog[0].story}</dd>
+                                <dd>{this.props.dog.story}</dd>
                             </dl>
                         </main>
 

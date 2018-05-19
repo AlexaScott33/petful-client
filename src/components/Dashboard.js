@@ -1,10 +1,19 @@
 import React from 'react';
-import Cat from './components/Cat';
-import Dog from './components/Dog';
+import { connect } from 'react-redux';
+import Cat from './Cat';
+import Dog from './Dog';
+import { fetchCat } from '../actions/cat';
+import { fetchDog } from '../actions/dog';
+
 
 import './Dashboard.css';
 
-export default class Dashboard extends React.Component {
+export class Dashboard extends React.Component {
+    componentDidMount() {
+        this.props.dispatch(fetchCat());
+        this.props.dispatch(fetchDog());
+    }
+
     render() {
         // const catList = this.props.cats.map((cat, index) =>(
         //     <li key={index}>
@@ -19,3 +28,10 @@ export default class Dashboard extends React.Component {
         );
     }
 }
+
+const mapStateToProps = (state) => ({
+    cats: state.catsReducer.cats,
+    dogs: state.dogsReducer.dogs
+});
+
+export default connect(mapStateToProps)(Dashboard);
