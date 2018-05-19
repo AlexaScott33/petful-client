@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class Cat extends React.Component {
     render() {
-        console.log('these are Cats props:', this.props.onAdoptPet); 
         return (
             <div>
                 <div className="col-6">

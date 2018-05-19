@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class Dog extends React.Component {
     render() {
-        // console.log('these are Dogs props:', this.props);
         return (
             <div>
                 <div className="col-6">
