@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './Cat.css';
+
 export default class Cat extends React.Component {
     render() {
-        console.log('this is acts props', this.props);
+        console.log('this is cacts props', this.props);
         return (
             <div>
                 <div className="col-6">

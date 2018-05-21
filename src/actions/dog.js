@@ -64,9 +64,9 @@ export const adoptDog = () => dispatch => {
         if (!res.ok) {
             return Promise.reject(res.statusText);
         }
-        return res.json();
+        return Promise.resolve(res);
     })
-    .then(dogs => {
+    .then((dogs) => {
         dispatch(adoptDogSuccess(dogs));
     })
     .then(() => {
