@@ -61,11 +61,9 @@ export const adoptCat = () => dispatch => {
         }
     })
     .then(res => {
-        console.log('this is the res', res);
         if (!res.ok) {
             return Promise.reject(res.statusText);
         }
-        // // console.log('dispatching fetchCat after adopt');
         return Promise.resolve(res);
     })
     .then((cats) => {

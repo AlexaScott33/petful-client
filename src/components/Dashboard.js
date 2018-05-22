@@ -15,11 +15,6 @@ export class Dashboard extends React.Component {
     }
 
     render() {
-        // const catList = this.props.cats.map((cat, index) =>(
-        //     <li key={index}>
-        //         {cat.name}
-        //     </li>
-        // ));
         return (
             <div>
                 <Cat cat={this.props.cats} onAdoptPet={() => this.props.dispatch(adoptCat())}/>

@@ -67,9 +67,11 @@ export const adoptDog = () => dispatch => {
         return Promise.resolve(res);
     })
     .then((dogs) => {
+        console.log('dispatching adoptDogSuccess');
         dispatch(adoptDogSuccess(dogs));
     })
     .then(() => {
+        console.log('dispatching fetchDog after adopt');
         dispatch(fetchDog());
     }).catch(err => {
         dispatch(adoptDogError(err));

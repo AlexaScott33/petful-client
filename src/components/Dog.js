@@ -5,8 +5,8 @@ import './Dog.css';
 export default class Dog extends React.Component {
     render() {
         return (
-            <div>
-                <div className="col-6">
+            <div className="container">
+                <div className="dog-column">
                     <section className="pet-dog">
                         <header>
                             <h2>{this.props.dog.name}</h2>
@@ -17,13 +17,13 @@ export default class Dog extends React.Component {
                         <main>
                             <h3>More about {this.props.dog.name}</h3>
                             <dl>
-                                <dt>Sex</dt>
+                                <dt>Sex:</dt>
                                 <dd>{this.props.dog.sex}</dd>
-                                <dt>Age</dt>
+                                <dt>Age:</dt>
                                 <dd>{this.props.dog.age}</dd>
-                                <dt>Breed</dt>
+                                <dt>Breed:</dt>
                                 <dd>{this.props.dog.breed}</dd>
-                                <dt>Story</dt>
+                                <dt>Story:</dt>
                                 <dd>{this.props.dog.story}</dd>
                             </dl>
                         </main>
