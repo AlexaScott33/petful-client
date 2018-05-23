@@ -8,13 +8,13 @@ export default class Dog extends React.Component {
             <div className="container">
                 <div className="dog-column">
                     <section className="pet-dog">
-                        <header>
+                        <header role="banner">
                             <h2>{this.props.dog.name}</h2>
                             <img src={this.props.dog.imageURL} alt={this.props.dog.imageDescription}></img>
                         </header>
                     
 
-                        <main>
+                        <main role="main">
                             <h3>More about {this.props.dog.name}</h3>
                             <dl>
                                 <dt>Sex:</dt>

@@ -17,6 +17,7 @@ export class Dashboard extends React.Component {
     render() {
         return (
             <div>
+                <h1>Petful</h1>
                 <Cat cat={this.props.cats} onAdoptPet={() => this.props.dispatch(adoptCat())}/>
                 <Dog dog={this.props.dogs} onAdoptPet={() => this.props.dispatch(adoptDog())}/>
             </div>

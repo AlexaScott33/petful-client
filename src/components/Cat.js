@@ -8,12 +8,12 @@ export default class Cat extends React.Component {
             <div className="container">
                 <div className="cat-column">
                     <section className="pet-cat">
-                        <header>
+                        <header role="banner">
                             <h2>{this.props.cat.name}</h2>
                             <img src={this.props.cat.imageURL} alt={this.props.cat.imageDescription}></img>
                         </header>
                     
-                        <main>
+                        <main role="main">
                             <h3>More about {this.props.cat.name}</h3>
                             <dl>
                                 <dt>Sex:</dt>
