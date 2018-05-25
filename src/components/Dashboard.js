@@ -19,7 +19,7 @@ export class Dashboard extends React.Component {
         return (
             <div>
                 <div className="header-box">
-                <Popup trigger={<button className="popup-button"> What is Petful?</button>} position="bottom">
+                <Popup trigger={<button className="popup-button"> What is Petful?</button>} position="bottom left">
                         <div className="popup-box">
                             <p><strong>Petful</strong> allows you to adopt either a cat or dog.</p>
                             <p> The adoption process is based on a first come, first serve. The animals available  to adopt are the ones that have been in the shelter the longest.</p>
