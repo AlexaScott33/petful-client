@@ -27,15 +27,8 @@ https://github.com/AlexaScott33/petful-server
 
 ## Screenshots
 
-Registration Page
-<img width="1262" alt="Register New User Page" src="https://user-images.githubusercontent.com/35544816/39558248-d28e88ec-4e41-11e8-9e9a-83e3ff0fdd0f.png">
+Adopt a cat
+<img width="603" alt="screen shot 2018-05-24 at 5 49 55 pm" src="https://user-images.githubusercontent.com/35544816/40520482-2b589784-5f7b-11e8-918f-2470230cc3ee.png">
 
-Login Page
-![screen shot 2018-05-02 at 8 00 17 pm](https://user-images.githubusercontent.com/35544816/39558447-8bf04054-4e43-11e8-9969-0ac7593694a1.png)
-
-Schedule/Home Page
-![screen shot 2018-05-02 at 7 55 01 pm](https://user-images.githubusercontent.com/35544816/39558357-c8edc19e-4e42-11e8-9c97-46052a54c30a.png)
-
-Single Match Details Page with Comment Section
-![screen shot 2018-05-02 at 7 56 26 pm](https://user-images.githubusercontent.com/35544816/39558379-f54553ec-4e42-11e8-8ccd-531ccaa04c0f.png)
-
+Adopt a dog
+<img width="569" alt="screen shot 2018-05-24 at 5 53 01 pm" src="https://user-images.githubusercontent.com/35544816/40520507-55029d8c-5f7b-11e8-82dd-eb75d9ba88da.png">
